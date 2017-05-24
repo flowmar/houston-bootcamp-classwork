@@ -1,3 +1,4 @@
+// Recursive function -- a function within a itself, which causes the function to be run multiple times. 
 // Include 'inquirer' in program
 var inquirer = require('inquirer');
 
