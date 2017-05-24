@@ -55,11 +55,35 @@ function getWords(loop) {
             name: "verb",
             message: "Enter a verb: "
         }).then(function(answers) {
+            // Push the user input for verb to the answers array
             verbs.push(answers.verb);
+            // Create a new MadLib object 
             var madLib = new MadLib(nouns, adjectives, verbs);
-            console.log(madLib);
+            // Run the constructStory function, passing in the madLib object
+            constructStory(madLib);
         });
     }
 }
+// A function that will create the story by replacing the words in brackets
+var constructStory = function(completeObject) {
+    // Will run 2 times
+    for (var i = 0; i < 2; i++) {
+        // Replace the first instance of [noun] with the noun from the completeObject object
+        completeObject.story = completeObject.story.replace("[noun]", completeObject.nouns[i]);
+    }
+    // Will run 1 time
+    for (var j = 0; j < 1; j++) {
+        // Replace the first instance of [adjective] with the adjective from the completeObject object        
+        completeObject.story = completeObject.story.replace("[adjective]", completeObject.adjectives[j]);
+    }
+    // Will run 1 time
+    for (var k = 0; k < 1; k++) {
+        // Replace the first instance of [verb] with the verb from the completeObject object        
+        completeObject.story = completeObject.story.replace("[verb]", completeObject.verbs[k]);
+    }
+    // Log the completed story to the console
+    console.log(completeObject.story);
+};
 
+// Calls the getWords function to initiate the program
 getWords(loop);
