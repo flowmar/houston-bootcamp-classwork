@@ -15,4 +15,24 @@
 
 3.**Subapplications** - in Express, they are called *routers*. Express lets you define routers that can be used in larger applications. Subapplications allow you to compartamentalize your application in to smaller pieces. 
 
-4.**Conveniences** - In Express, a lot of things are wrapped up into a few lines of code that would take siginifincantly more in raw Node.js
+4.**Conveniences** - In Express, a lot of things are wrapped up into a few lines of code that would take siginifincantly more in raw Node.
+
+
+- Javascript : jQuery 
+
+as
+
+- Node.js : Express
+
+---
+
+- Express is very flexible and unopinionated.
+
+- Middleware breaks your app down into smaller bits of behavior.
+
+- Routing also breaks your app up into smaller function that are exeuted when a user visits a certain webpage.
+
+- Subapplications help to modularize your code
+
+## The Basics of Node.js
+
