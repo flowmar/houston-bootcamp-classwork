@@ -1,0 +1,19 @@
+{
+  "name": "thingy",
+  "version": "1.0.0",
+  "description": "amazing package",
+  "main": "hello-world-with-express.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowmar/hello-world-with-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flowmar/hello-world-with-express/issues"
+  },
+  "homepage": "https://github.com/flowmar/hello-world-with-express#readme"
+}
