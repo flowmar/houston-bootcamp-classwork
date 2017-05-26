@@ -1,5 +1,9 @@
 # SQL
 
+## Codecademy
+
+--- 
+
 - *Relational Database* - databases that organize information into tables
 
 - *Table* - colleciton of data organized into rows and columns
@@ -71,3 +75,12 @@
 **LEFT OUTER JOIN** - will return every row in the left table; if the join condition is not met, NULL values are used to fill the colums from the right table
 
 **AS** - allows you to rename a column or table in the results set using an alias
+
+## sqlcourse.com
+
+---
+
+### What is SQL?
+
+**SQL** stands for **S**tructured **Q**uery **L**anguage and is used to communicate with databases.
+
