@@ -1,8 +1,10 @@
-# SQL
+# **SQL**
 
-## Codecademy
+---
 
---- 
+## ***Codecademy***
+
+---
 
 - *Relational Database* - databases that organize information into tables
 
@@ -22,7 +24,7 @@
 
 - *right table* - the second table you are joining
 
-## Commands
+## **Commands**
 
 ---
 
@@ -76,11 +78,54 @@
 
 **AS** - allows you to rename a column or table in the results set using an alias
 
-## sqlcourse.com
+---
+## ***sqlcourse.com***
 
 ---
 
-### What is SQL?
+### **What is SQL?**
 
 **SQL** stands for **S**tructured **Q**uery **L**anguage and is used to communicate with databases.
 
+Most database systems use SQL, but also have their own proprietary extensions. The standard SQL commands, *SELECT*, *INSERT*, *UPDATE*, *DELETE*, *CREATE* and *DROP* can be used across the board.
+
+### **Table Basics**
+
+- *Tables* are identified by their names and are comprised of columns and rows
+
+- *Columns* contain name, data type, and any other attributes for the column
+
+- *Rows* contain the records (data) for the columns
+
+### **Selecting Data**
+
+The **SELECT** statement is used to query the database and retrieve the selected data that matches your chosen criteria
+
+***SYNTAX***
+
+```sql
+SELECT "column1"
+  [,"column2", etc]
+  FROM "tablename"
+  [WHERE "condition"];
+```
+
+[] = optional
+
+***EXAMPLE***
+
+```sql
+SELECT * FROM movies
+```
+
+- Selects 'all' columns from the table 'movies'
+
+---
+
+`WHERE` is an optional clause that specifies criteria that must be met for a result to match
+
+```sql
+SELECT first, last
+FROM empinfo
+WHERE last LIKE '%s'
+```
