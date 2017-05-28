@@ -129,3 +129,91 @@ SELECT first, last
 FROM empinfo
 WHERE last LIKE '%s'
 ```
+
+`LIKE` is an operator that matches patterns
+
+`%` can be used to mean 'any number of any character'
+
+`_` can be used to mean '1 of any character'
+
+---
+---
+
+### **Creating Tables**
+
+`CREATE TABLE` is used to create a new table.
+
+```sql
+CREATE TABLE "tablename"
+("column1" "data type"
+        [constraint],
+"column2" "data type"
+        [constraint],
+"column3" "data type"
+        [constraint]);
+```
+
+[] = optional
+
+---
+
+## **Data Types**
+
+- CHAR(size) - fixed-length character string
+
+- VARCHAR(size) - variable-length character string, maximum size in parentheses
+
+- NUMBER(size) - number value with a max number of digits specified
+
+- DATE - date value
+
+- NUMBER (size, d) - number value with a maximum total size, followed by the number of digits to the right of the decimal
+
+
+### **Inserting Into a Table**
+
+```sql
+INSERT INTO "tablename"
+(first_column, ... last_column)
+VALUES (first_value, ... last_value);
+```
+
+---
+
+### **Example**
+
+```sql
+INSERT INTO employees
+(first_name, last_name, age, local_address, city, state)
+VALUES ('Person', 'Personson', 54, '3330 Westheimer', 'Houston', 'TX');
+```
+
+### **Updating Records**
+
+***SYNTAX***
+
+```sql
+UPDATE "tablename"
+SET "columnname" = "newvalue"
+[, "nextcolumn" = "newvalue2"...]
+WHERE "columnname"
+    OPERATOR "value"
+[and|or "column"
+OPERATOR "value"];
+```
+
+***EXAMPLE***
+
+```sql
+UPDATE phone_book
+    SET area_code = 623
+    WHERE prefix = 979;
+
+UPDATE phone_book
+    SET last_name = 'Smith', prefix=555, suffix=9292
+    WHERE last_name = 'Jones';
+
+UPDATE phone_book
+    SET age = age+1
+    WHERE first_name = 'Mary' AND last_name = 'Williams';
+```
