@@ -169,8 +169,12 @@ CREATE TABLE "tablename"
 
 - NUMBER (size, d) - number value with a maximum total size, followed by the number of digits to the right of the decimal
 
+---
 
 ### **Inserting Into a Table**
+
+---
+
 
 ```sql
 INSERT INTO "tablename"
@@ -188,7 +192,11 @@ INSERT INTO employees
 VALUES ('Person', 'Personson', 54, '3330 Westheimer', 'Houston', 'TX');
 ```
 
+---
+
 ### **Updating Records**
+
+---
 
 ***SYNTAX***
 
@@ -217,3 +225,50 @@ UPDATE phone_book
     SET age = age+1
     WHERE first_name = 'Mary' AND last_name = 'Williams';
 ```
+
+---
+
+***DELETING RECORDS***
+
+---
+
+```sql
+DELETE FROM "tablename"
+WHERE "columnname"
+OPERATOR "value"
+[and|or "column"
+OPERATOR "value"];
+```
+
+[] = optional
+
+**WARNING**: If you leave off the 'WHERE' clause, **all records will be deleted**
+
+***EXAMPLE***
+
+```sql
+DELETE FROM employees
+    WHERE lastname = 'May';
+
+DELETE FROM employees
+    WHERE firstname = 'Mike' or firstname = 'Eric';
+```
+
+---
+
+### **DROP A TABLE**
+
+---
+
+***SYNTAX***
+
+```sql
+DROP TABLE "tablename";
+```
+
+***EXAMPLE***
+
+```sql
+DROP TABLE employees;
+```
+
