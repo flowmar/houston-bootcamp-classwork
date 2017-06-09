@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/flowmar/hello-world-with-express/issues"
   },
-  "homepage": "https://github.com/flowmar/hello-world-with-express#readme"
+  "homepage": "https://github.com/flowmar/hello-world-with-express#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
 }
